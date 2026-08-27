@@ -158,7 +158,7 @@ class MissingTeethValDM(Dataset):
     def __len__(self):
         return len(self.Labels)
 
-# Training Augmentations
+# Validation Augmentations
 validation_augmentations = A.Compose([
     A.ShiftScaleRotate(shift_limit = 0,
                        scale_limit=[0.5, 0.5],
